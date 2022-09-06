@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- container and title -->
+<div class="container my-4">
+    <h1 class="fs-1 d-flex justify-content-center p-5">Ninja Chat</h1>
+    <h2 class="currName fs-4 d-flex justify-content-center fw-light p-4">Curretly logged as :</h2>
+    <h2 class="fs-4 fw-light text-center">Choose a chatroom:</h2>
+
+    <!-- buttons for chatrooms-->
+
+    <div class="chat-rooms d-flex justify-content-center mb-5">
+        <button type="button" class="btn btn-success m-2 p-3" id="general">#general</button>
+        <button type="button" class="btn btn-success m-2 p-3" id="gaming">#gaming</button>
+        <button type="button" class="btn btn-success m-2 p-3" id="music">#music</button>
+        <button type="button" class="btn btn-success m-2 p-3" id="ninjas">#ninjas</button>
+    </div>
+
+    <!-- chat list / window -->
+
+    <div class="chat d-flex justify-content-center flex-wrap">
+
+        <ul class="chat-list list-group"></ul>
+
+    </div>    
+
+    <!-- new chat form -->
+
+    <form class="new-chat my-3">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Your message:</div>
+          </div>
+          <input type="text" id="message" class="form-control" required style="background-color: rgba(255, 255, 255, 0.7)">
+          <div class="input-group-append">
+            <input type="submit" class="btn btn-success" value="send">
+          </div>
+        </div>
+      </form>
+
+    <!-- update name form-->
+
+    <form class="new-name my-3">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Update name:</div>
+          </div>
+          <input type="text" id="name" class="form-control" required style="background-color: rgba(255, 255, 255, 0.7)">
+          <div class="input-group-append">
+            <input type="submit" class="btn btn-success" value="update">
+          </div>
+        </div>
+        <div class="update-mssg"></div>
+      </form>
+
+</div>
+
+
+    <script src="/dist/bundle.js"></script>
+</body>
+</html>

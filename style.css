@@ -1,0 +1,32 @@
+.btn{
+    outline: none !important;
+    
+}
+.btn:focus{
+    outline: none !important;
+}
+.chat-list li{
+    width:  500px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.user{
+    font-weight: bold;
+}
+.time{
+    font-size: 0.7em;
+    color: #999;
+}
+body{
+    background-image: url('./bottle-mood-ship-vessel.jpeg');
+    background-size: cover;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+}
+.chat-list{
+    overflow-y: auto;
+    max-height: 300px;
+    scroll-padding-bottom: 50px;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
